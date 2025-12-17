@@ -76,6 +76,47 @@ section {
   color: var(--primary);
 }
 
+/* NAV BASE */
+
+
+/* HAMBURGER BUTTON */
+.menu-toggle {
+  display: none;
+  font-size: 1.8rem;
+  background: none;
+  border: none;
+  cursor: pointer;
+  color: var(--dark);
+}
+
+/* MOBILE NAV */
+@media (max-width: 768px) {
+
+  .menu-toggle {
+    display: block;
+  }
+
+  .nav-links {
+    display: none; /* 🔴 THIS FIXES THE JAM */
+    position: absolute;
+    top: 100%;
+    right: 10%;
+    background: #ffffff;
+    flex-direction: column;
+    gap: 16px;
+    padding: 20px;
+    border-radius: 12px;
+    border: 1px solid var(--border);
+    box-shadow: 0 20px 40px rgba(0,0,0,0.12);
+    min-width: 180px;
+    z-index: 999;
+  }
+
+  .nav-links.active {
+    display: flex;
+  }
+}
+
 /* ===============================
    HERO SECTION
 ================================ */
