@@ -80,15 +80,17 @@ section {
    HERO SECTION
 ================================ */
 .hero {
-  background:
+  background-image:
     linear-gradient(
       rgba(255,255,255,0.92),
       rgba(255,255,255,0.92)
     ),
-    url("https://images.unsplash.com/photo-1581091870627-3b9b6f2a9c30");
+    url("https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=1600&q=80");
   background-size: cover;
   background-position: center;
+  background-repeat: no-repeat;
 }
+
 
 .hero-content {
   max-width: 650px;
