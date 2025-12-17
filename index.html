@@ -12,13 +12,21 @@
 
   <!-- NAV -->
   <nav class="nav">
-    <h2 class="logo">M.D Tech Repairs</h2>
-    <ul class="nav-links">
-      <li><a href="#services">Services</a></li>
-      <li><a href="#why">Why Us</a></li>
-      <li><a href="#contact">Contact</a></li>
-    </ul>
-  </nav>
+  <h2 class="logo">MD Tech Repair</h2>
+
+  <ul class="nav-links" id="navLinks">
+    <li><a href="#services">Services</a></li>
+    <li><a href="#why">Why Us</a></li>
+    <li><a href="#contact">Contact</a></li>
+  </ul>
+
+  <div class="menu-toggle" id="menuToggle">
+    <span></span>
+    <span></span>
+    <span></span>
+  </div>
+</nav>
+
 
   <!-- HERO -->
   <header class="hero">
@@ -80,7 +88,7 @@
       <i class="fas fa-envelope"></i> Email Us
     </a>
 
-    <a href="https://wa.me/+2348037701169" class="btn whatsapp">
+    <a href="https://wa.me/=+2348037701169" class="btn whatsapp">
       <i class="fab fa-whatsapp"></i> WhatsApp Us
     </a>
   </div>
@@ -91,6 +99,16 @@
   <footer class="footer">
     <p>© 2025 M.D Tech Repairs. All rights reserved.</p>
   </footer>
+
+  <script>
+  const menuToggle = document.getElementById("menuToggle");
+  const navLinks = document.getElementById("navLinks");
+
+  menuToggle.addEventListener("click", () => {
+    navLinks.classList.toggle("active");
+  });
+</script>
+
 
 </body>
 </html>

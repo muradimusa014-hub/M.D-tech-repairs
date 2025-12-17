@@ -80,16 +80,16 @@ section {
    HERO SECTION
 ================================ */
 .hero {
-  background-image:
+  background:
     linear-gradient(
-      rgba(255,255,255,0.92),
-      rgba(255,255,255,0.92)
+      rgba(255,255,255,0.80),
+      rgba(255,255,255,0.80)
     ),
-    url("https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=1600&q=80");
+    url("./assets/images/repair-bg.jpg");
   background-size: cover;
   background-position: center;
-  background-repeat: no-repeat;
 }
+
 
 
 .hero-content {
@@ -241,3 +241,4 @@ section {
 .btn.whatsapp:hover {
   background: #1ebe5d;
 }
+
